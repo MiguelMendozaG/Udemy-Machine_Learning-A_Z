@@ -50,7 +50,7 @@ plt.ylabel('Salary')
 plt.show()
 
 # Visualising the Polynomial Regression results (for higher resolution and smoother curve)
-X_grid = np.arange(min(X), max(X), 0.1)
+X_grid = np.arange(min(X), max(X), 0.1) #is the resolution of the graph, it makes the plot look soft (the line between points are not shown as lines)
 X_grid = X_grid.reshape((len(X_grid), 1))
 plt.scatter(X, y, color = 'red')
 plt.plot(X_grid, lin_reg_2.predict(poly_reg.fit_transform(X_grid)), color = 'blue')
